@@ -7,6 +7,8 @@ import (
 	"fmt"
 	"sso/internal/domain/models"
 	"sso/internal/storage"
+
+	_ "github.com/mattn/go-sqlite3"
 )
 
 type Storage struct {
