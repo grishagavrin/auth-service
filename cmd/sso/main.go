@@ -4,9 +4,9 @@ import (
 	"log/slog"
 	"os"
 	"os/signal"
-	"sso/cmd/internal/app"
-	"sso/cmd/internal/config"
-	"sso/cmd/internal/lib/logger/handlers/slogpretty"
+	"sso/internal/app"
+	"sso/internal/config"
+	"sso/internal/lib/logger/handlers/slogpretty"
 	"syscall"
 )
 
@@ -28,10 +28,6 @@ func main() {
 	)
 
 	go application.GRPCSrv.MustRun()
-
-	// TODO: инициализировать приложение (app)
-
-	// TODO: запустить grpc
 
 	// Graceful shutdown
 	stop := make(chan os.Signal, 1)
