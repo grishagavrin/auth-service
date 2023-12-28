@@ -1,6 +1,8 @@
 module sso
 
-go 1.20
+go 1.21
+
+toolchain go1.21.4
 
 require (
 	github.com/fatih/color v1.16.0
@@ -15,6 +17,7 @@ require (
 
 require (
 	github.com/BurntSushi/toml v1.2.1 // indirect
+	github.com/brianvoe/gofakeit/v6 v6.26.3 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/go-multierror v1.1.1 // indirect
